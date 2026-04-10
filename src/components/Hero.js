@@ -109,7 +109,7 @@ export default function Hero() {
             fontWeight: 400,
           }}
         >
-          One person. Turning creative work into apps, brands, business, and more — not a suit, not a VC. The goal: bootstrap to $1 billion.
+                 Community built. No investors. No boardroom. Building brands, products, and businesses from creative work alone — not a suit, not a VC. The goal: bootstrap to $1 billion.
         </motion.p>
 
         <motion.div

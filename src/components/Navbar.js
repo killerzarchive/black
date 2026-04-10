@@ -82,6 +82,7 @@ export default function Navbar() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <a
             href="#contact"
+            className='cta-btn'
             style={{
               background: '#fff',
               color: '#000',
