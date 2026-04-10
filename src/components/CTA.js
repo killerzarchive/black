@@ -89,15 +89,11 @@ export default function CTA() {
             <form
               onSubmit={handleSubmit}
               style={{
-                display: 'flex',
-                gap: '12px',
+                display: 'flex', gap: '12px',
                 background: 'rgba(255,255,255,0.04)',
                 border: '1px solid rgba(255,255,255,0.1)',
-                borderRadius: '100px',
-                padding: '8px 8px 8px 24px',
-                maxWidth: '500px',
-                margin: '0 auto',
-                backdropFilter: 'blur(10px)',
+                borderRadius: '100px', padding: '8px 8px 8px 24px',
+                maxWidth: '500px', margin: '0 auto', backdropFilter: 'blur(10px)',
               }}
             >
               <input
@@ -107,33 +103,19 @@ export default function CTA() {
                 placeholder="Your email address"
                 required
                 style={{
-                  flex: 1,
-                  background: 'none',
-                  border: 'none',
-                  outline: 'none',
-                  fontSize: '15px',
-                  color: '#fff',
-                  fontFamily: 'inherit',
-                  '::placeholder': { color: 'rgba(255,255,255,0.3)' },
+                  flex: 1, minWidth: 0, background: 'none', border: 'none', outline: 'none',
+                  fontSize: '15px', color: '#fff', fontFamily: 'inherit',
                 }}
               />
               <button
                 type="submit"
+                className="cta-send-btn"
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  background: '#fff',
-                  color: '#000',
-                  border: 'none',
-                  padding: '12px 22px',
-                  borderRadius: '100px',
-                  fontSize: '14px',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  fontFamily: 'inherit',
-                  flexShrink: 0,
-                  transition: 'opacity 0.2s',
+                  display: 'flex', alignItems: 'center', gap: '8px',
+                  background: '#fff', color: '#000', border: 'none',
+                  padding: '12px 22px', borderRadius: '100px',
+                  fontSize: '14px', fontWeight: 600, cursor: 'pointer',
+                  fontFamily: 'inherit', flexShrink: 0, transition: 'opacity 0.2s',
                 }}
                 onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '1'}
