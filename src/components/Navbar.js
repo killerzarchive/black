@@ -48,13 +48,11 @@ export default function Navbar() {
           }}>
             <div style={{ width: 12, height: 12, background: '#000', borderRadius: '3px' }} />
           </div>
-          <span style={{
-            fontSize: '15px',
-            fontWeight: 700,
-            letterSpacing: '-0.02em',
-            color: '#fff',
-          }}>
-            The Black Company.
+           <span className='logo-mobile' style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '-0.02em', color: '#fff' }}>
+           Black
+          </span>
+          <span className='logo-desktop' style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '-0.02em', color: '#fff' }}>
+           The Black Company
           </span>
         </div>
 
@@ -98,7 +96,7 @@ export default function Navbar() {
             onMouseEnter={e => e.target.style.opacity = '0.85'}
             onMouseLeave={e => e.target.style.opacity = '1'}
           >
-            Get in touch
+            Access
           </a>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -157,9 +155,14 @@ export default function Navbar() {
       </AnimatePresence>
 
       <style>{`
+        .logo-mobile { display: none; }
+        .logo-desktop { display: inline; }
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
+          .logo-mobile { display: inline; }
+          .logo-desktop { display: none; }
+          .cta-btn { display: none !important; }
         }
       `}</style>
     </>
