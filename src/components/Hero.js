@@ -58,7 +58,7 @@ export default function Hero() {
             backdropFilter: 'blur(10px)',
           }}>
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#fff', display: 'inline-block' }} />
-            Creative → Company
+            Creativity → Company
           </span>
         </motion.div>
 
