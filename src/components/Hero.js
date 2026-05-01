@@ -14,21 +14,6 @@ export default function Hero() {
       overflow: 'hidden',
       background: '#000',
     }}>
-      {/* Grid background */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        backgroundImage: `
-          linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)
-        `,
-        backgroundSize: '60px 60px',
-        pointerEvents: 'none',
-        zIndex: 0,
-        maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
-        WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
-      }} />
-
       {/* Radial glow */}
       <div style={{
         position: 'absolute',
@@ -60,14 +45,14 @@ export default function Hero() {
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
-            background: 'rgba(255,255,255,0.06)',
+            background: '#000',
             border: '1px solid rgba(255,255,255,0.1)',
             borderRadius: '100px',
             padding: '6px 16px',
             fontSize: '12px',
             fontWeight: 500,
             letterSpacing: '0.08em',
-            color: 'rgba(255,255,255,0.6)',
+            color: '#fff',
             textTransform: 'uppercase',
             marginBottom: '32px',
             backdropFilter: 'blur(10px)',
