@@ -130,7 +130,7 @@ export default function Hero() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: 'rgba(255,255,255,0.06)',
+              background: '#000',
               color: '#fff',
               padding: '14px 28px',
               borderRadius: '100px',
