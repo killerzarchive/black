@@ -73,7 +73,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           style={{
-            fontSize: 85,
+            fontSize: 'clamp(36px, 7.5vw, 85px)',
             fontWeight: 600,
             lineHeight: 1.0,
             color: '#000',
