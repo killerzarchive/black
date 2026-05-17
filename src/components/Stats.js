@@ -12,19 +12,11 @@ export default function Stats() {
   return (
     <section style={{
       padding: '80px 40px',
-      borderTop: '1px solid rgba(255,255,255,0.06)',
-      borderBottom: '1px solid rgba(255,255,255,0.06)',
-      background: 'rgba(255,255,255,0.015)',
+      borderTop: '1px solid rgba(0,0,0,0.06)',
+      borderBottom: '1px solid rgba(0,0,0,0.06)',
+      background: 'rgba(0,0,0,0.02)',
     }}>
-      <div style={{
-        maxWidth: '1100px',
-        margin: '0 auto',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '16px',
-      }}
-      className="stats-grid"
-      >
+      <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }} className="stats-grid">
         {stats.map((s, i) => (
           <motion.div
             key={s.label}
@@ -34,22 +26,10 @@ export default function Stats() {
             transition={{ delay: i * 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             style={{ textAlign: 'center', padding: '32px 16px' }}
           >
-            <div style={{
-              fontSize: 'clamp(36px, 5vw, 56px)',
-              fontWeight: 800,
-              letterSpacing: '-0.04em',
-              color: '#fff',
-              lineHeight: 1,
-              marginBottom: '8px',
-            }}>
+            <div style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 800, letterSpacing: '-0.04em', color: '#000', lineHeight: 1, marginBottom: '8px' }}>
               {s.value}
             </div>
-            <div style={{
-              fontSize: '14px',
-              color: 'rgba(255,255,255,0.4)',
-              fontWeight: 400,
-              letterSpacing: '-0.01em',
-            }}>
+            <div style={{ fontSize: '14px', color: 'rgba(0,0,0,0.4)', fontWeight: 400, letterSpacing: '-0.01em' }}>
               {s.label}
             </div>
           </motion.div>

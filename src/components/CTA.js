@@ -8,116 +8,37 @@ export default function CTA() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) {
-      setSent(true);
-      setEmail('');
-    }
+    if (email) { setSent(true); setEmail(''); }
   };
 
   return (
-    <section id="contact" style={{
-      padding: '140px 40px',
-      borderTop: '1px solid rgba(255,255,255,0.06)',
-      position: 'relative',
-      overflow: 'hidden',
-    }}>
-      {/* Background grid */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        backgroundImage: `
-          linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)
-        `,
-        backgroundSize: '60px 60px',
-        pointerEvents: 'none',
-        maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 80%)',
-      }} />
-
-      <div style={{
-        position: 'relative',
-        maxWidth: '700px',
-        margin: '0 auto',
-        textAlign: 'center',
-      }}>
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <span style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'rgba(255,255,255,0.06)',
-            border: '1px solid rgba(255,255,255,0.1)',
-            borderRadius: '100px',
-            padding: '6px 16px',
-            fontSize: '12px',
-            fontWeight: 500,
-            letterSpacing: '0.08em',
-            color: 'rgba(255,255,255,0.5)',
-            textTransform: 'uppercase',
-            marginBottom: '32px',
-          }}>
+    <section id="contact" style={{ padding: '140px 40px', borderTop: '1px solid rgba(0,0,0,0.06)', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'relative', maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
+        <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '100px', padding: '6px 16px', fontSize: '12px', fontWeight: 500, letterSpacing: '0.08em', color: 'rgba(0,0,0,0.5)', textTransform: 'uppercase', marginBottom: '32px' }}>
             Get In Touch
           </span>
 
-          <h2 style={{
-            fontSize: 'clamp(40px, 6vw, 72px)',
-            fontWeight: 800,
-            letterSpacing: '-0.04em',
-            lineHeight: 1.0,
-            color: '#fff',
-            marginBottom: '24px',
-          }}>
+          <h2 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.0, color: '#000', marginBottom: '24px' }}>
             Let's build<br />
-            <span style={{ color: 'rgba(255,255,255,0.4)' }}>something great</span>
+            <span style={{ color: 'rgba(0,0,0,0.3)' }}>something great</span>
           </h2>
 
-          <p style={{
-            fontSize: '16px',
-            color: 'rgba(255,255,255,0.4)',
-            lineHeight: 1.7,
-            marginBottom: '48px',
-          }}>
+          <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.4)', lineHeight: 1.7, marginBottom: '48px' }}>
             Whether you're looking to partner, invest, or explore acquisition — we'd love to hear from you.
           </p>
 
           {!sent ? (
-            <form
-              onSubmit={handleSubmit}
-              style={{
-                display: 'flex', gap: '12px',
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                borderRadius: '100px', padding: '8px 8px 8px 24px',
-                maxWidth: '500px', margin: '0 auto', backdropFilter: 'blur(10px)',
-              }}
-            >
+            <form onSubmit={handleSubmit} style={{ display: 'flex', gap: '12px', background: 'rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '100px', padding: '8px 8px 8px 24px', maxWidth: '500px', margin: '0 auto' }}>
               <input
-                type="email"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                placeholder="Your email address"
-                required
-                style={{
-                  flex: 1, minWidth: 0, background: 'none', border: 'none', outline: 'none',
-                  fontSize: '15px', color: '#fff', fontFamily: 'inherit',
-                }}
+                type="email" value={email} onChange={e => setEmail(e.target.value)}
+                placeholder="Your email address" required
+                style={{ flex: 1, minWidth: 0, background: 'none', border: 'none', outline: 'none', fontSize: '15px', color: '#000', fontFamily: 'inherit' }}
               />
               <button
                 type="submit"
-                className="cta-send-btn"
-                style={{
-                  display: 'flex', alignItems: 'center', gap: '8px',
-                  background: '#fff', color: '#000', border: 'none',
-                  padding: '12px 22px', borderRadius: '100px',
-                  fontSize: '14px', fontWeight: 600, cursor: 'pointer',
-                  fontFamily: 'inherit', flexShrink: 0, transition: 'opacity 0.2s',
-                }}
-                onMouseEnter={e => e.currentTarget.style.opacity = '0.85'}
+                style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#000', color: '#fff', border: 'none', padding: '12px 22px', borderRadius: '100px', fontSize: '14px', fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit', flexShrink: 0, transition: 'opacity 0.2s' }}
+                onMouseEnter={e => e.currentTarget.style.opacity = '0.75'}
                 onMouseLeave={e => e.currentTarget.style.opacity = '1'}
               >
                 <Send size={14} /> Send
@@ -125,49 +46,21 @@ export default function CTA() {
             </form>
           ) : (
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              style={{
-                background: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.12)',
-                borderRadius: '16px',
-                padding: '20px 32px',
-                maxWidth: '500px',
-                margin: '0 auto',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-              }}
+              initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
+              style={{ background: 'rgba(0,0,0,0.03)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '16px', padding: '20px 32px', maxWidth: '500px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '12px' }}
             >
-              <span style={{ width: 8, height: 8, background: '#fff', borderRadius: '50%' }} />
-              <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '15px' }}>
-                Message received. We'll be in touch shortly.
-              </span>
+              <span style={{ width: 8, height: 8, background: '#000', borderRadius: '50%' }} />
+              <span style={{ color: 'rgba(0,0,0,0.6)', fontSize: '15px' }}>Message received. We'll be in touch shortly.</span>
             </motion.div>
           )}
 
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '32px',
-            marginTop: '48px',
-            flexWrap: 'wrap',
-          }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '32px', marginTop: '48px', flexWrap: 'wrap' }}>
             {['Partnerships', 'Acquisitions', 'Careers', 'Press'].map(link => (
               <a
-                key={link}
-                href="#contact"
-                style={{
-                  fontSize: '14px',
-                  color: 'rgba(255,255,255,0.35)',
-                  textDecoration: 'none',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '4px',
-                  transition: 'color 0.2s',
-                }}
-                onMouseEnter={e => e.currentTarget.style.color = 'rgba(255,255,255,0.7)'}
-                onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.35)'}
+                key={link} href="#contact"
+                style={{ fontSize: '14px', color: 'rgba(0,0,0,0.35)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', transition: 'color 0.2s' }}
+                onMouseEnter={e => e.currentTarget.style.color = 'rgba(0,0,0,0.7)'}
+                onMouseLeave={e => e.currentTarget.style.color = 'rgba(0,0,0,0.35)'}
               >
                 {link} <ArrowRight size={12} />
               </a>

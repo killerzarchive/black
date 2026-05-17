@@ -12,7 +12,7 @@ export default function Hero() {
       alignItems: 'center',
       justifyContent: 'center',
       overflow: 'hidden',
-      background: '#000',
+      background: '#fff',
     }}>
       {/* Radial glow */}
       <div style={{
@@ -22,7 +22,7 @@ export default function Hero() {
         transform: 'translate(-50%, -50%)',
         width: '800px',
         height: '600px',
-        background: 'radial-gradient(ellipse at center, rgba(255,255,255,0.04) 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.04) 0%, transparent 70%)',
         pointerEvents: 'none',
         zIndex: 0,
       }} />
@@ -32,34 +32,40 @@ export default function Hero() {
         position: 'relative',
         zIndex: 1,
         textAlign: 'center',
-        padding: '0 24px',
+        padding: '0 24px 120px',
         maxWidth: '900px',
         margin: '0 auto',
       }}>
+      
+
+        {/* Animated logo mark */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <span style={{
-            display: 'inline-flex',
+          initial={{ opacity: 0, scale: 0.4, rotate: -12 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ delay: 0.28, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            background: '#000',
-            border: '1px solid rgba(255,255,255,0.1)',
-            borderRadius: '100px',
-            padding: '6px 16px',
-            fontSize: '12px',
-            fontWeight: 500,
-            letterSpacing: '0.08em',
-            color: '#fff',
-            textTransform: 'uppercase',
-            marginBottom: '32px',
-            backdropFilter: 'blur(10px)',
-          }}>
-            <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#fff', display: 'inline-block' }} />
-            Creativity → Company
-          </span>
+            justifyContent: 'center',
+            marginBottom: '28px',
+            marginTop: '90px'
+          }}
+        >
+          <motion.div
+            animate={{ y: [0, -6, 0] }}
+            transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
+            style={{
+              width: 80, height: 80,
+              background: '#000',
+              borderRadius: '20px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.12)',
+            }}
+          >
+            <div style={{ width: 34, height: 34, background: '#fff', borderRadius: '9px' }} />
+          </motion.div>
         </motion.div>
 
         <motion.h1
@@ -71,14 +77,12 @@ export default function Hero() {
             fontWeight: 800,
             lineHeight: 1.0,
             letterSpacing: '-0.04em',
-            color: '#fff',
+            color: '#000',
             marginBottom: '28px',
           }}
         >
           The Black<br />
-          
-            Company
-        
+          Company
         </motion.h1>
 
         <motion.p
@@ -87,14 +91,14 @@ export default function Hero() {
           transition={{ delay: 0.5, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           style={{
             fontSize: 'clamp(16px, 2vw, 20px)',
-            color: 'rgba(255,255,255,0.5)',
+            color: 'rgba(0,0,0,0.45)',
             lineHeight: 1.6,
             maxWidth: '560px',
             margin: '0 auto 48px',
-            fontWeight: 400,
+            fontWeight: 500,
           }}
         >
-                 Community built. No investors. No boardroom. Building brands, products, and businesses from creative work alone — not a suit, not a VC. The goal: bootstrap to $1 billion.
+          Community built. No investors. No boardroom. Building brands, products, and businesses from creative work alone — not a suit, not a VC. The goal: bootstrap to $1 billion.
         </motion.p>
 
         <motion.div
@@ -109,8 +113,8 @@ export default function Hero() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: '#fff',
-              color: '#000',
+              background: '#000',
+              color: '#fff',
               padding: '14px 28px',
               borderRadius: '100px',
               fontSize: '15px',
@@ -130,19 +134,18 @@ export default function Hero() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: '#000',
-              color: '#fff',
+              background: '#fff',
+              color: '#000',
               padding: '14px 28px',
               borderRadius: '100px',
               fontSize: '15px',
               fontWeight: 500,
               textDecoration: 'none',
-              border: '1px solid rgba(255,255,255,0.1)',
-              backdropFilter: 'blur(10px)',
+              border: '1px solid rgba(0,0,0,0.12)',
               transition: 'background 0.2s',
             }}
-            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.06)'}
+            onMouseEnter={e => e.currentTarget.style.background = 'rgba(0,0,0,0.05)'}
+            onMouseLeave={e => e.currentTarget.style.background = '#fff'}
           >
             Our Portfolio
           </a>
@@ -153,8 +156,8 @@ export default function Hero() {
       <div style={{
         position: 'absolute',
         bottom: 0, left: 0, right: 0,
-        height: '200px',
-        background: 'linear-gradient(to top, #000 0%, transparent 100%)',
+        height: '100px',
+        background: 'linear-gradient(to top, #fff 0%, transparent 100%)',
         pointerEvents: 'none',
         zIndex: 1,
       }} />
@@ -176,11 +179,11 @@ export default function Hero() {
           gap: '8px',
         }}
       >
-        <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Scroll</span>
+        <span style={{ fontSize: '11px', color: 'rgba(0,0,0,0.3)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Scroll</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-          style={{ width: 1, height: 32, background: 'linear-gradient(to bottom, rgba(255,255,255,0.4), transparent)' }}
+          style={{ width: 1, height: 32, background: 'linear-gradient(to bottom, rgba(0,0,0,0.4), transparent)' }}
         />
       </motion.div>
     </section>
