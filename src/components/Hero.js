@@ -73,17 +73,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           style={{
-            fontSize: 'clamp(52px, 9vw, 104px)',
-            fontWeight: 800,
+            fontSize: 85,
+            fontWeight: 600,
             lineHeight: 1.0,
-            letterSpacing: '-0.04em',
             color: '#000',
             marginBottom: '28px',
           }}
         >
-          The Black<br />
-          Company
-        </motion.h1>
+Ideas built further.       
+ </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -98,8 +96,7 @@ export default function Hero() {
             fontWeight: 500,
           }}
         >
-          Community built. No investors. No boardroom. Building brands, products, and businesses from creative work alone — not a suit, not a VC. The goal: bootstrap to $1 billion.
-        </motion.p>
+Technology, media, brands, and future ventures — all contributing to one growing ecosystem.        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}

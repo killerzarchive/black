@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const solutions = [
-  { number: '01', title: 'Build', desc: 'I find problems worth solving and ship products to fix them. Everything starts as a creative idea — then gets engineered into something people actually pay for.', tags: ['Brands', 'Apps', 'Products', 'Revenue First'] },
-  { number: '02', title: 'Grow the Portfolio', desc: 'Each product that works becomes its own company under the Black Company umbrella. The goal is a portfolio of compounding businesses, not one big bet.', tags: ['Bootstrapped', 'Multi-product', 'Long Game'] },
-  { number: '03', title: 'Hit $1 Billion', desc: 'The target is audacious: bootstrap the entire portfolio to a combined $1B valuation without outside investment. No VC. The co-founders are fellow creatives who believe in what this is.', tags: ['$1B Goal', 'No VC', 'Creatives Only'] },
+  { number: '01', title: 'Find the idea. Build the company.', desc: 'Every venture starts with an idea worth taking further. We identify gaps across technology, media, and brands — then build real businesses around them, focused on revenue from day one.', tags: ['Tech', 'Media', 'Brands', 'Revenue First'] },
+  { number: '02', title: 'Expand the ecosystem.', desc: 'Each company that works becomes a permanent part of the portfolio. They operate independently but contribute to one compounding whole — a private ecosystem that grows stronger with every addition.', tags: ['Private Portfolio', 'Multi-venture', 'Long Game'] },
+  { number: '03', title: 'Reach $1 billion. Stay private.', desc: 'The target is a combined $1B portfolio valuation — funded not by venture capital, but by private investors and fellow creatives who believe in the vision. No board control. No exit pressure. Built to last.', tags: ['$1B Goal', 'Private', 'Believer-Backed'] },
 ];
 
 export default function Solutions() {
@@ -12,8 +12,8 @@ export default function Solutions() {
     <section id="solutions" style={{ padding: '120px 40px', background: 'rgba(0,0,0,0.015)', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: '80px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>What We Do</span>
-          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>Our approach</h2>
+          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>How It Works</span>
+          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>Building the ecosystem</h2>
         </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>

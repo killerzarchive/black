@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const values = [
-  { title: 'Creative first, always', desc: 'Every idea here starts as a creative impulse — not a market analysis. The work comes first. The business follows.' },
-  { title: 'No lane', desc: "Creativity isn't just for artists. It's for anyone with a healthy imagination and the drive to build. The Black Company exists in every industry because good ideas don't belong to one category." },
-  { title: 'Ideas into real things', desc: "Apps. SaaS. Brands. Businesses. The goal is to close the gap between imagination and execution — and prove it's possible without outside money or permission." },
-  { title: 'Bootstrap to $1B', desc: "The number is audacious on purpose. No VC. But the co-founders? Every creative who believes in creativity and the authenticity of it — they're already in." },
+  { title: 'Ideas first, always', desc: 'Every venture starts with a real idea worth building — not a pitch deck. The concept earns its place by solving something real, then we build the business around it.' },
+  { title: 'Every industry', desc: "Good ideas don't belong to one category. The Black Company spans technology, media, brands, and beyond — because the ecosystem grows wherever the ideas are strongest." },
+  { title: 'Ideas into real things', desc: 'Apps. SaaS. Media brands. Physical products. The goal is closing the gap between concept and company — and proving that a strong idea, built right, can compete with anything.' },
+  { title: 'Private. To $1 billion.', desc: "The goal is audacious by design. No venture capital. Growth is backed by fellow creatives and private investors who believe in the vision — and we stay private the entire way there." },
 ];
 
 export default function About() {
@@ -13,19 +13,19 @@ export default function About() {
     <section id="about" style={{ padding: '140px 40px', maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start' }} className="about-grid">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
-          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>A Movement</span>
+          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>The Ecosystem</span>
           <h2 style={{ fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000', marginBottom: '32px' }}>
             Not just a company.<br />
-            <span style={{ color: 'rgba(0,0,0,0.35)' }}>A creative movement.</span>
+            <span style={{ color: 'rgba(0,0,0,0.35)' }}>A growing ecosystem.</span>
           </h2>
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.5)', lineHeight: 1.75, marginBottom: '20px' }}>
-            The Black Company is a thought that became a direction — turning creative energy into apps, SaaS products, brands, and businesses across every industry. Not a business plan. A creative impulse taken all the way.
+            The Black Company is a private portfolio built on a simple principle — take ideas further. Technology, media, brands, and future ventures that each stand on their own while contributing to one compounding whole.
           </p>
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.5)', lineHeight: 1.75, marginBottom: '20px' }}>
-            The goal is real: bootstrap a portfolio of companies to $1 billion — fully owned, no outside money, built from ideas alone. But the bigger point is what that proves. Creativity isn't a lane. It never was. It's the foundation every industry is secretly built on.
+            The company stays private. Growth is backed by fellow creatives and private investors who believe in the vision — not venture capital, not public markets. The target is $1 billion in combined portfolio value, built on our terms.
           </p>
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.5)', lineHeight: 1.75 }}>
-            If this inspires another creative to stop waiting for permission and start building — that's just as important as the billion.
+            Every company in the portfolio is a real business solving a real problem — built to last, not to flip.
           </p>
         </motion.div>
 

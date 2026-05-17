@@ -1,4 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap');
+@font-face {
+  font-family: 'Saans';
+  src: url('./saans-font-family/SaansCollectionVF-TRIAL.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('./saans-font-family/Saans-TRIAL-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('./saans-font-family/Saans-TRIAL-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('./saans-font-family/Saans-TRIAL-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('./saans-font-family/Saans-TRIAL-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -25,7 +54,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Saans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #fff;
   color: #000;
   -webkit-font-smoothing: antialiased;

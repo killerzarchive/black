@@ -20,12 +20,12 @@ export default function CTA() {
           </span>
 
           <h2 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.0, color: '#000', marginBottom: '24px' }}>
-            Let's build<br />
-            <span style={{ color: 'rgba(0,0,0,0.3)' }}>something great</span>
+            Believe in<br />
+            <span style={{ color: 'rgba(0,0,0,0.3)' }}>the vision?</span>
           </h2>
 
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.4)', lineHeight: 1.7, marginBottom: '48px' }}>
-            Whether you're looking to partner, invest, or explore acquisition — we'd love to hear from you.
+            Whether you're a fellow creative, a private investor, or a potential partner — if you believe in ideas built further, we want to hear from you.
           </p>
 
           {!sent ? (
