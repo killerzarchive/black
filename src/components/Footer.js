@@ -20,7 +20,7 @@ export default function Footer() {
               <span style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '-0.02em', color: '#000' }}>BLACK COMPANY</span>
             </div>
             <p style={{ fontSize: '13px', color: 'rgba(0,0,0,0.35)', lineHeight: 1.7, maxWidth: '200px' }}>
-              Building the technology companies that define tomorrow.
+              Build something real. Build something that lasts. Never let the system decide your ceiling.
             </p>
           </div>
 

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Zap, Shield, BarChart2, Globe, Code2, Cpu } from 'lucide-react';
 
 const products = [
-  { icon: <Zap size={22} />, name: 'BlackFlow', tag: 'Automation', desc: 'Enterprise workflow automation that eliminates repetitive tasks and scales operations without adding headcount.', metric: '10x faster' },
+  { icon: <Zap size={22} />, name: 'Plugged', tag: 'Social', desc: 'Enterprise workflow automation that eliminates repetitive tasks and scales operations without adding headcount.', metric: '10x faster' },
   { icon: <Shield size={22} />, name: 'VaultOS', tag: 'Security', desc: 'Zero-trust security infrastructure for modern enterprises. End-to-end encrypted, compliance-ready.', metric: '99.99% uptime' },
   { icon: <BarChart2 size={22} />, name: 'DataPulse', tag: 'Analytics', desc: 'Real-time analytics platform that turns raw data into actionable intelligence for your entire organization.', metric: '500ms insights' },
   { icon: <Globe size={22} />, name: 'EdgeNet', tag: 'Infrastructure', desc: 'Global edge computing network delivering sub-20ms latency for applications at any scale.', metric: '180 edge nodes' },
@@ -61,8 +61,8 @@ export default function Products() {
   return (
     <section id="products" style={{ padding: '120px 40px', maxWidth: '1200px', margin: '0 auto' }}>
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: '72px' }}>
-        <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>Our Software</span>
-        <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, maxWidth: '600px', color: '#000' }}>Products built for scale</h2>
+        <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>The Ventures</span>
+        <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, maxWidth: '600px', color: '#000' }}>Built with intention. Built to last.</h2>
       </motion.div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }} className="products-grid">

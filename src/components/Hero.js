@@ -80,8 +80,7 @@ export default function Hero() {
             marginBottom: '28px',
           }}
         >
-Ideas built further.       
- </motion.h1>
+Ideas built further.</motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -96,7 +95,7 @@ Ideas built further.
             fontWeight: 500,
           }}
         >
-Technology, media, brands, and future ventures — all contributing to one growing ecosystem.        </motion.p>
+An umbrella of ventures, projects, and people united by one principle — build something real, build something that lasts, and never let the system decide your ceiling.</motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}

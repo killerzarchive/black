@@ -2,9 +2,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const solutions = [
-  { number: '01', title: 'Find the idea. Build the company.', desc: 'Every venture starts with an idea worth taking further. We identify gaps across technology, media, and brands — then build real businesses around them, focused on revenue from day one.', tags: ['Tech', 'Media', 'Brands', 'Revenue First'] },
-  { number: '02', title: 'Expand the ecosystem.', desc: 'Each company that works becomes a permanent part of the portfolio. They operate independently but contribute to one compounding whole — a private ecosystem that grows stronger with every addition.', tags: ['Private Portfolio', 'Multi-venture', 'Long Game'] },
-  { number: '03', title: 'Reach $1 billion. Stay private.', desc: 'The target is a combined $1B portfolio valuation — funded not by venture capital, but by private investors and fellow creatives who believe in the vision. No board control. No exit pressure. Built to last.', tags: ['$1B Goal', 'Private', 'Believer-Backed'] },
+  {
+    number: '01',
+    title: 'Rebellious by nature.',
+    desc: 'We don\'t follow industry playbooks. We write our own. Every venture under The Black Company is built on the question: what would we do if no one told us what we couldn\'t?',
+    tags: ['Anti-Playbook', 'Original', 'No Ceilings'],
+  },
+  {
+    number: '02',
+    title: 'Creative by design.',
+    desc: 'Every venture is built with intention, aesthetic, and originality — because how you build matters as much as what you build. Mediocrity is never an option.',
+    tags: ['Intentional', 'Aesthetic', 'Originality'],
+  },
+  {
+    number: '03',
+    title: 'Calculated in execution.',
+    desc: 'Disruption without strategy is just noise. We\'re bold and smart. Every move is deliberate — from the idea to the business model to the market we enter.',
+    tags: ['Strategic', 'Bold', 'Deliberate'],
+  },
+  {
+    number: '04',
+    title: 'Raw in truth.',
+    desc: 'No corporate fluff. No inflated promises. Just honest work, honest growth, and honest money. We say what we mean and build what we say.',
+    tags: ['No Fluff', 'Transparent', 'Real'],
+  },
 ];
 
 export default function Solutions() {
@@ -12,8 +33,8 @@ export default function Solutions() {
     <section id="solutions" style={{ padding: '120px 40px', background: 'rgba(0,0,0,0.015)', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: '80px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>How It Works</span>
-          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>Building the ecosystem</h2>
+          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>How We Move</span>
+          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>The standard we operate by</h2>
         </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
@@ -21,7 +42,7 @@ export default function Solutions() {
             <motion.div
               key={s.number}
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              transition={{ delay: i * 0.12, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ delay: i * 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               style={{ display: 'grid', gridTemplateColumns: '80px 1fr auto', gap: '48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}
               className="solution-row"
             >

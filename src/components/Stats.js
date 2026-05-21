@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '1', label: 'Builder' },
-  { value: '$1B', label: 'The Goal' },
-  { value: '0→∞', label: 'Bootstrap Only' },
-  { value: '∞', label: 'Ideas in Progress' },
+  { value: '1', label: 'Builder. No Permission Needed.' },
+  { value: '$1B', label: 'The Only Goal' },
+  { value: '∞', label: 'No Ceiling' },
+  { value: '100%', label: 'Privately Owned' },
 ];
 
 export default function Stats() {

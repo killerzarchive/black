@@ -15,17 +15,18 @@ export default function CTA() {
     <section id="contact" style={{ padding: '140px 40px', borderTop: '1px solid rgba(0,0,0,0.06)', position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'relative', maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}>
+
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(0,0,0,0.04)', border: '1px solid rgba(0,0,0,0.08)', borderRadius: '100px', padding: '6px 16px', fontSize: '12px', fontWeight: 500, letterSpacing: '0.08em', color: 'rgba(0,0,0,0.5)', textTransform: 'uppercase', marginBottom: '32px' }}>
-            Get In Touch
+            The Standard
           </span>
 
           <h2 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.0, color: '#000', marginBottom: '24px' }}>
-            Believe in<br />
-            <span style={{ color: 'rgba(0,0,0,0.3)' }}>the vision?</span>
+            Go further than<br />
+            <span style={{ color: 'rgba(0,0,0,0.3)' }}>the idea.</span>
           </h2>
 
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.4)', lineHeight: 1.7, marginBottom: '48px' }}>
-            Whether you're a fellow creative, a private investor, or a potential partner — if you believe in ideas built further, we want to hear from you.
+            Everyone inside The Black Company operates by one standard: go further than the idea, further than the plan, further than what anyone expected. If that's you — we need to talk.
           </p>
 
           {!sent ? (
@@ -55,7 +56,7 @@ export default function CTA() {
           )}
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '32px', marginTop: '48px', flexWrap: 'wrap' }}>
-            {['Partnerships', 'Acquisitions', 'Careers', 'Press'].map(link => (
+            {['Partnerships', 'Private Investment', 'Careers', 'Press'].map(link => (
               <a
                 key={link} href="#contact"
                 style={{ fontSize: '14px', color: 'rgba(0,0,0,0.35)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', transition: 'color 0.2s' }}
@@ -66,6 +67,7 @@ export default function CTA() {
               </a>
             ))}
           </div>
+
         </motion.div>
       </div>
     </section>

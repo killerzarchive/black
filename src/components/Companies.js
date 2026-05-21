@@ -59,13 +59,13 @@ export default function Companies() {
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: '72px' }}>
           <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>
-            Portfolio · Starting with tech
+            The Portfolio
           </span>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '24px' }}>
             <div>
-              <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000', marginBottom: '12px' }}>Companies we own</h2>
+              <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000', marginBottom: '12px' }}>Real ventures. Fully owned.</h2>
               <p style={{ fontSize: '15px', color: 'rgba(0,0,0,0.35)', fontWeight: 400, maxWidth: '480px', lineHeight: 1.6 }}>
-                Tech is the entry point. The portfolio will eventually span every major industry — built by one creative, owned completely.
+                Every company in this portfolio is built to last — not to flip. No board control, no outside pressure. Just real businesses built by people who refused to be told no.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 120px 80px 40px', gap: '24px', width: '100%', padding: '0 32px', opacity: 0.3 }} className="company-row">
