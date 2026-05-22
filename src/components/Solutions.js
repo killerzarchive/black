@@ -4,27 +4,27 @@ import { motion } from 'framer-motion';
 const solutions = [
   {
     number: '01',
-    title: 'Rebellious by nature.',
-    desc: 'We don\'t follow industry playbooks. We write our own. Every venture under The Black Company is built on the question: what would we do if no one told us what we couldn\'t?',
-    tags: ['Anti-Playbook', 'Original', 'No Ceilings'],
+    title: 'Creativity.',
+    desc: 'Not as a trend or a marketing angle — creativity as a way of living and building. We bring our full selves into everything we make. The most genuine expression of who you are is always the most powerful thing you can build.',
+    tags: ['Self-Expression', 'Authentic', 'Full Selves'],
   },
   {
     number: '02',
-    title: 'Creative by design.',
-    desc: 'Every venture is built with intention, aesthetic, and originality — because how you build matters as much as what you build. Mediocrity is never an option.',
-    tags: ['Intentional', 'Aesthetic', 'Originality'],
+    title: 'Innovation.',
+    desc: 'We don\'t claim innovation — we prove it. Every venture asks the same question: what are we doing here that has never been done before? What problem are we solving in a way that actually changes something for the people who live with it?',
+    tags: ['Measurable', 'Problem-First', 'Impact-Driven'],
   },
   {
     number: '03',
-    title: 'Calculated in execution.',
-    desc: 'Disruption without strategy is just noise. We\'re bold and smart. Every move is deliberate — from the idea to the business model to the market we enter.',
-    tags: ['Strategic', 'Bold', 'Deliberate'],
+    title: 'Community.',
+    desc: 'We build for people. Not markets, not demographics, not numbers on a spreadsheet. Every venture inside The Black Project is anchored to the community it serves. Community is not a side effect of what we build — it is the reason we build.',
+    tags: ['People First', 'Purpose', 'Real Impact'],
   },
   {
     number: '04',
-    title: 'Raw in truth.',
-    desc: 'No corporate fluff. No inflated promises. Just honest work, honest growth, and honest money. We say what we mean and build what we say.',
-    tags: ['No Fluff', 'Transparent', 'Real'],
+    title: 'No playbook needed.',
+    desc: 'Corporate structure does not define how we operate. We prove every day that you can start from nothing, stay true to yourself, and build something that lasts. The Black Project is proof of concept for every person waiting for permission to start.',
+    tags: ['Bootstrap', 'No Permission', 'Proof of Concept'],
   },
 ];
 
@@ -33,8 +33,8 @@ export default function Solutions() {
     <section id="solutions" style={{ padding: '120px 40px', background: 'rgba(0,0,0,0.015)', borderTop: '1px solid rgba(0,0,0,0.06)', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} style={{ marginBottom: '80px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>How We Move</span>
-          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>The standard we operate by</h2>
+          <span style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(0,0,0,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase', display: 'block', marginBottom: '16px' }}>The Three Pillars</span>
+          <h2 style={{ fontSize: 'clamp(36px, 5vw, 60px)', fontWeight: 800, letterSpacing: '-0.04em', lineHeight: 1.05, color: '#000' }}>Creativity. Innovation. Community.</h2>
         </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>

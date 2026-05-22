@@ -26,7 +26,7 @@ export default function CTA() {
           </h2>
 
           <p style={{ fontSize: '16px', color: 'rgba(0,0,0,0.4)', lineHeight: 1.7, marginBottom: '48px' }}>
-            Everyone inside The Black Company operates by one standard: go further than the idea, further than the plan, further than what anyone expected. If that's you — we need to talk.
+            Every person, venture, and product inside The Black Project is held to one standard — go further than the idea, further than the plan, further than what anyone expected. Further as proof that you can start with nothing but a genuine idea and build something that changes how people live. If that's you, we need to talk.
           </p>
 
           {!sent ? (

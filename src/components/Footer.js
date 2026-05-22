@@ -17,10 +17,10 @@ export default function Footer() {
               <div style={{ width: 28, height: 28, background: '#000', borderRadius: '7px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ width: 12, height: 12, background: '#fff', borderRadius: '3px' }} />
               </div>
-              <span style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '-0.02em', color: '#000' }}>BLACK COMPANY</span>
+              <span style={{ fontSize: '14px', fontWeight: 700, letterSpacing: '-0.02em', color: '#000' }}>BLACK PROJECT</span>
             </div>
             <p style={{ fontSize: '13px', color: 'rgba(0,0,0,0.35)', lineHeight: 1.7, maxWidth: '200px' }}>
-              Build something real. Build something that lasts. Never let the system decide your ceiling.
+              Be yourself while serving others. Say less. Mean more. Build always.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div style={{ borderTop: '1px solid rgba(0,0,0,0.06)', paddingTop: '32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
           <span style={{ fontSize: '13px', color: 'rgba(0,0,0,0.25)' }}>
-            © {new Date().getFullYear()} The Black Company. All rights reserved.
+            © {new Date().getFullYear()} The Black Project. All rights reserved.
           </span>
           <div style={{ display: 'flex', gap: '24px' }}>
             {['Twitter', 'LinkedIn', 'GitHub'].map(s => (
