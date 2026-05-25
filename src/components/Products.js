@@ -3,12 +3,11 @@ import { motion } from 'framer-motion';
 import { Zap, Shield, BarChart2, Globe, Code2, Cpu } from 'lucide-react';
 
 const products = [
-  { icon: <Zap size={22} />, name: 'Plugged', tag: 'Social', desc: 'Enterprise workflow automation that eliminates repetitive tasks and scales operations without adding headcount.', metric: '10x faster' },
-  { icon: <Shield size={22} />, name: 'VaultOS', tag: 'Security', desc: 'Zero-trust security infrastructure for modern enterprises. End-to-end encrypted, compliance-ready.', metric: '99.99% uptime' },
-  { icon: <BarChart2 size={22} />, name: 'DataPulse', tag: 'Analytics', desc: 'Real-time analytics platform that turns raw data into actionable intelligence for your entire organization.', metric: '500ms insights' },
-  { icon: <Globe size={22} />, name: 'EdgeNet', tag: 'Infrastructure', desc: 'Global edge computing network delivering sub-20ms latency for applications at any scale.', metric: '180 edge nodes' },
-  { icon: <Code2 size={22} />, name: 'DeployKit', tag: 'DevOps', desc: 'Ship software with confidence. Automated CI/CD, rollbacks, and blue-green deployments built in.', metric: '3min deploys' },
-  { icon: <Cpu size={22} />, name: 'NeuralBase', tag: 'AI / ML', desc: 'Foundation model infrastructure that lets any team build, fine-tune, and deploy AI at enterprise scale.', metric: '1T+ parameters' },
+  { icon: <Zap size={22} />, name: 'Plugged', tag: 'Social', desc: 'Enterprise workflow automation that eliminates repetitive tasks and scales operations without adding headcount.', metric: 'Finished' },
+  { icon: <Shield size={22} />, name: 'Commercify', tag: 'Business', desc: 'Zero-trust security infrastructure for modern enterprises. End-to-end encrypted, compliance-ready.', metric: 'Finished' },
+  { icon: <BarChart2 size={22} />, name: 'Controversial', tag: 'Media', desc: 'Real-time analytics platform that turns raw data into actionable intelligence for your entire organization.', metric: 'Building' },
+  { icon: <Globe size={22} />, name: 'Duo', tag: 'Transportation', desc: 'Global edge computing network delivering sub-20ms latency for applications at any scale.', metric: 'Building' },
+  { icon: <Code2 size={22} />, name: 'Pickup', tag: 'Productivity', desc: 'Ship software with confidence. Automated CI/CD, rollbacks, and blue-green deployments built in.', metric: 'Building' },
 ];
 
 function Card({ product, index }) {

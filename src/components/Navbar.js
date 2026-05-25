@@ -45,7 +45,6 @@ export default function Navbar() {
           }}>
             <div style={{ width: 12, height: 12, background: '#fff', borderRadius: '3px' }} />
           </div>
-          <span className='logo-mobile' style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '-0.02em', color: '#000' }}>Black</span>
           <span className='logo-desktop' style={{ fontSize: '15px', fontWeight: 700, letterSpacing: '-0.02em', color: '#000' }}>The Black Project</span>
         </div>
 
