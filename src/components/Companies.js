@@ -3,12 +3,16 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 const companies = [
-  { name: 'Obsidian Labs', domain: 'Deep Tech R&D', founded: '2019', desc: 'Pioneering quantum-resistant cryptography and next-generation hardware security modules for critical infrastructure.' },
-  { name: 'NovaSoft', domain: 'Enterprise SaaS', founded: '2020', desc: 'AI-powered ERP solutions replacing legacy systems for Fortune 500 companies worldwide.' },
-  { name: 'PulseMedia', domain: 'Media & Content', founded: '2021', desc: 'Next-generation content platform distributing creator-owned media across 40+ countries.' },
-  { name: 'ChainVault', domain: 'Fintech', founded: '2022', desc: 'Institutional-grade digital asset custody and settlement infrastructure for global financial markets.' },
-  { name: 'AxisCloud', domain: 'Cloud Infrastructure', founded: '2020', desc: 'Sovereign cloud platform purpose-built for regulated industries: healthcare, government, and defense.' },
-  { name: 'StudioAI', domain: 'Creative Tech', founded: '2023', desc: 'Generative AI tools for creative professionals — design, video, and music production at scale.' },
+  { name: 'Controversial Media', domain: 'Deep Tech R&D', founded: '2019', desc: 'Pioneering quantum-resistant cryptography and next-generation hardware security modules for critical infrastructure.' },
+  { name: 'Kyro Builds', domain: 'Enterprise SaaS', founded: '2020', desc: 'AI-powered ERP solutions replacing legacy systems for Fortune 500 companies worldwide.' },
+  { name: 'Triune Studios', domain: 'Media & Content', founded: '2021', desc: 'Next-generation content platform distributing creator-owned media across 40+ countries.' },
+  { name: 'Plugged', domain: 'Fintech', founded: '2022', desc: 'Institutional-grade digital asset custody and settlement infrastructure for global financial markets.' },
+  { name: 'Duo', domain: 'Cloud Infrastructure', founded: '2020', desc: 'Sovereign cloud platform purpose-built for regulated industries: healthcare, government, and defense.' },
+  { name: 'Black Technologies', domain: 'Creative Tech', founded: '2023', desc: 'Generative AI tools for creative professionals — design, video, and music production at scale.' },
+  { name: 'Controversial', domain: 'Fintech', founded: '2022', desc: 'Institutional-grade digital asset custody and settlement infrastructure for global financial markets.' },
+  { name: 'Pickup', domain: 'Cloud Infrastructure', founded: '2020', desc: 'Sovereign cloud platform purpose-built for regulated industries: healthcare, government, and defense.' },
+  { name: 'Black Resources', domain: 'Creative Tech', founded: '2023', desc: 'Generative AI tools for creative professionals — design, video, and music production at scale.' },
+  { name: 'Commercify', domain: 'Creative Tech', founded: '2023', desc: 'Generative AI tools for creative professionals — design, video, and music production at scale.' },
 ];
 
 function CompanyRow({ company, index }) {
