@@ -3,10 +3,13 @@ import { motion } from 'framer-motion';
 
 const products = [
   { image: '/images/plugged.png', name: 'Plugged', tag: 'Social', desc: 'Enterprise workflow automation that eliminates repetitive tasks and scales operations without adding headcount.', metric: 'Beta' },
-  { image: '/images/simpl.png', name: 'Simpl', tag: 'Business', desc: 'Zero-trust security infrastructure for modern enterprises. End-to-end encrypted, compliance-ready.', metric: 'Beta' },
   { image: '/images/controversial.png', name: 'Controversial', tag: 'Media', desc: 'Real-time analytics platform that turns raw data into actionable intelligence for your entire organization.', metric: 'Building' },
   { image: '/images/duo.png', name: 'Duo', tag: 'Transportation', desc: 'Global edge computing network delivering sub-20ms latency for applications at any scale.', metric: 'Building' },
   { image: '/images/pickup.png', name: 'Pickup', tag: 'Productivity', desc: 'Ship software with confidence. Automated CI/CD, rollbacks, and blue-green deployments built in.', metric: 'Building' },
+    { image: '/images/simpl.png', name: 'Simpl', tag: 'Business', desc: 'Zero-trust security infrastructure for modern enterprises. End-to-end encrypted, compliance-ready.', metric: 'Beta' },
+
+    { image: '/images/spotted.png', name: 'Spotted', tag: 'Financial', desc: 'Ship software with confidence. Automated CI/CD, rollbacks, and blue-green deployments built in.', metric: 'Building' },
+
 ];
 
 function Card({ product, index }) {
